@@ -14,7 +14,7 @@ class PhotoInterceptor : Interceptor {
                 .addQueryParameter("format","json")
                 .addQueryParameter("nojsoncallback","1")
                 .addQueryParameter("extras","url_s")
-                .addQueryParameter("safe-search","1") //Исправил с -
+                .addQueryParameter("safe-search","0") //Исправил с -
                 .build()
         val newRequest: Request = originalRequest.newBuilder()
                 .url(newUrl)
